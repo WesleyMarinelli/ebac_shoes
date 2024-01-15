@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+header,
+section h2,
+section h1 {
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 16px 0 0;
+    border-bottom: 2px solid #05d1a1;
+    margin-bottom: 56px;
+}
+
+body {
+    background-color: #c9faee;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #7cf7d8;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+}
+
+
+
+header nav li a, h1, h2 {
+    color: rgb(1, 54, 41);
+    text-decoration: none;
+}
+ 
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .container {
+    display: flex;
+    align-items: flex-start;
+    padding: 16px;
+}
+
+section h2, h3{   /* espaco entre o titulo "sobre a loja" e o texto */
+    margin-bottom: 25px;
+    margin-left: 16px;
+}
+
+section h2 {
+    border-bottom: 2px solid #05d1a1;
+}
+
+section .container img {
+    height: 300px;
+}
+
+section .estoque{
+    justify-content: space-between;
+    display: flex;
+}
+
+.estoque img {
+    max-width: 100%;
+}
+
+.container-sales {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%; /*espacamento entre as colunas*/
+    row-gap: 10%;
+}
+
+.sales h2 {
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.containerr {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.estoque h3, p {
+    color: rgb(5, 43, 44);
+    
+}
+
+.estoque p {
+    margin-bottom: 15px;
+}
+
+.estoque h4 {
+    color: red;
+    text-decoration:line-through;
+    margin-bottom: 15px;
+}
+
+.estoque p {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+header li:hover {
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+button {
+    margin-top: 15px;
+    background-color: #05d1a1;
+    border:none;
+    border-radius: 3px;
+    width: 200px;
+    height: 25px;
+}
+
+button:hover {
+    background-color: #7cf7d8;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer {
+    padding: 16px 0;
+    background-color: #7cf7d8;
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+    margin-top: 80px;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    section .container img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .container-sales {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 2%; /*espacamento entre as colunas*/
+        row-gap: 10%;
+    }
+
+    .estoque {
+        margin-left: 25px;
+    }
+    
+    footer {
+        margin-top: 150px;
+    }
+}
+
+
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 90%;
+        flex-direction: column;
+        box-sizing: border-box;
+        
+    }
+
+    section .container h2, h3{
+        margin-left: 0;
+        margin-top: 30px;
+
+    }
+
+    section .container img {
+        width: 100%;
+        height: 200px
+        
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+
+    .container-sales {
+        display: grid;
+        grid-template-columns: repeat(1, 98%);
+        column-gap: 2%; /*espacamento entre as colunas*/
+        row-gap: 5%;
+    }
+
+    .estoque img {
+        width: 90%;
+    }
+
+    .estoque {
+        margin-left: 25px;
+    }
+    
+    footer {
+        margin-top: 320px;
+    }
+}
+
+
+
+
+
+
+
